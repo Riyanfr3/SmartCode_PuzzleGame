@@ -1,8 +1,5 @@
-import javax.swing.JFrame;
-import javax.swing.WindowConstants;
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.Dimension;
+import javax.swing.*;
+import java.awt.*;
 
 public class UserInterface implements Runnable {
   // Frame untuk game
@@ -21,9 +18,10 @@ public class UserInterface implements Runnable {
   }
 
   public void run() {
-    frame = new JFrame("Puzzle_PBO_C");
+    frame = new JFrame("Puzzle SmartCode");
+    ImageIcon imageIcon = new ImageIcon("C:\\Tugas UAS Prak PBO\\puzzle_icon.png");
 
-    frame.setPreferredSize(new Dimension(dimension + 200, dimension + margin));
+    frame.setPreferredSize(new Dimension(dimension + 400, dimension + margin));
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     frame.setResizable(true);
 
@@ -31,6 +29,7 @@ public class UserInterface implements Runnable {
 
     frame.pack();
     frame.setVisible(true);
+    frame.setIconImage(imageIcon.getImage());
   }
 
   private void createComponents(Container container) {
