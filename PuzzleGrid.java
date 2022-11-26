@@ -55,7 +55,7 @@ public class PuzzleGrid extends JPanel {
     private Logic logic;
 
     // ActionListener menggunakan mouse alias MouseListener
-    private Control cl;
+    private Control c;
 
     public PuzzleGrid(int size, int dim, int mar, String mode) {
         this.size = size;
@@ -75,7 +75,7 @@ public class PuzzleGrid extends JPanel {
 
         // Instansiasi Logic dan ClickListener
         this.logic = new Logic();
-        this.cl = new Control(this);
+        this.c = new Control(this);
 
         // Mengatur ukuran PuzzleGrid berdasarkan dimension
         setPreferredSize(new Dimension(dimension + 200, dimension + margin));
@@ -87,7 +87,7 @@ public class PuzzleGrid extends JPanel {
         gameOver = true;
 
         // Menambah MouseListener menggunakan class ClickListener
-        addMouseListener(cl);
+        addMouseListener(c);
 
         // Reset Button
         JButton reset = new JButton("Reset");
@@ -208,7 +208,7 @@ public class PuzzleGrid extends JPanel {
             tiles[i] = (i + 1) % tiles.length;
         }
 
-        // Menyimpan blankPos di posisi teralhir dari array
+        // Menyimpan blankPos di posisi terakhir dari array
         blankPos = tiles.length - 1;
 
         // Menyimpan nilai 0 untuk clickNum
