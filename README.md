@@ -1,4 +1,6 @@
-# SmartCode_PuzzleGame
+# SmartCode_Puzzle_Game
+
+Topic : Puzzle_Game
 
 Pemberitahuan :
 1. Pemain akan ditampilkan dengan tampilan frame dari puzzle yang dimana ada terdapat kotak 3x3 yang berisi 8 angka didalamnya.
