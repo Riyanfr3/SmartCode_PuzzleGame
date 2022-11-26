@@ -13,6 +13,7 @@ public class Logic {
   // jumlah inversi haruslah genap agar puzzle dapat diselesaikan
   public boolean isSolvable(PuzzleGrid pg) {
     this.tiles = pg.getTiles();
+    nbTiles = tiles.length - 1;
     int countInversion = 0;
 
     for (int i = 0; i < nbTiles; i++) {
