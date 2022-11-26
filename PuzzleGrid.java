@@ -1,16 +1,7 @@
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.FontMetrics;
-import java.awt.Graphics2D;
-import java.awt.Graphics;
-import java.awt.RenderingHints;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Dimension;
-import java.util.Random;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+import java.util.*;
 
 public class PuzzleGrid extends JPanel {
     // Ukuran game puzzle
@@ -88,9 +79,9 @@ public class PuzzleGrid extends JPanel {
 
         // Mengatur ukuran PuzzleGrid berdasarkan dimension
         setPreferredSize(new Dimension(dimension + 200, dimension + margin));
-        setBackground(Color.WHITE);
+        setBackground(Color.darkGray);
         setForeground(FOREGROUND_COLOR);
-        setFont(new Font("Courier New", Font.BOLD, 30));
+        setFont(new Font("Ink Free", Font.BOLD, 30));
 
         // Set gameOver di construct agar game dapat dimainkan
         gameOver = true;
@@ -100,6 +91,8 @@ public class PuzzleGrid extends JPanel {
 
         // Reset Button
         JButton reset = new JButton("Reset");
+        reset.setFocusable(false);
+        reset.setPreferredSize(new Dimension(80, 30));
         add(reset);
         reset.addActionListener(new ActionListener() {
             @Override
@@ -109,7 +102,7 @@ public class PuzzleGrid extends JPanel {
                 if (tiles[size * size - 1] != 0)
                     JOptionPane.showMessageDialog(null,
                             "Pindahkan posisi kosong ke ujung kanan bawah sebelum mereset!",
-                            "Gagal Untuk Reset!",
+                            "Gagal Mereset Permainan!",
                             JOptionPane.WARNING_MESSAGE);
                 else {
                     newGame();
@@ -127,9 +120,8 @@ public class PuzzleGrid extends JPanel {
         if (gameOver) {
             g.setFont(getFont().deriveFont(Font.BOLD, 18));
             g.setColor(FOREGROUND_COLOR);
-            String s = "Klik di mana saja untuk memulai game.";
-            g.drawString(s, ((getWidth() - g.getFontMetrics().stringWidth(s)) / 2) - 90,
-                    getHeight() - margin + 5);
+            g.drawString("Klik dimana saja untuk memulai game.", dimension + 10, (int) (0.3 * dimension));
+            g.drawString("Congratulations, You Win!", dimension + 80, (int) (0.95 * dimension));
         }
     }
 
@@ -146,16 +138,25 @@ public class PuzzleGrid extends JPanel {
     private void drawHighScore(Graphics2D g) {
         g.setFont(getFont().deriveFont(Font.BOLD, 20));
         g.setColor(FOREGROUND_COLOR);
-        g.drawString("High Score", dimension + 15, (int) (0.55 * dimension));
-        g.drawString(String.valueOf(this.highScore), dimension + 70, (int) (0.6 * dimension));
+        g.drawString("High Score", dimension + 100, (int) (0.1 * dimension));
+        g.drawString(String.valueOf(this.highScore), dimension + 130, (int) (0.15 * dimension));
     }
 
     // Menampilkan jumlah klik user selama satu sesi game
     private void drawClickNum(Graphics2D g) {
         g.setFont(getFont().deriveFont(Font.BOLD, 20));
         g.setColor(FOREGROUND_COLOR);
-        g.drawString("Click Numbers", dimension, (int) (0.65 * dimension));
-        g.drawString(String.valueOf(this.clickNum), (dimension + 70), (int) (0.7 * dimension));
+        g.drawString("Click Numbers", dimension + 85, (int) (0.2 * dimension));
+        g.drawString(String.valueOf(this.clickNum), (dimension + 140), (int) (0.25 * dimension));
+    }
+    
+    // Membuat gambar (path dari gambarnya disesuaikan)
+    Image einstein = new ImageIcon("C:\\Tugas UAS Prak PBO\\Einstein.png").getImage();
+
+    public void images(Graphics g) {
+        Graphics2D g2D = (Graphics2D) g;
+
+        g2D.drawImage(einstein, dimension - 18, (int) (0.35 * dimension), null);
     }
 
     // Menggambar keseluruhan grid berdasarkan size
@@ -275,5 +276,7 @@ public class PuzzleGrid extends JPanel {
         drawClickNum(gtd);
         // Menggambar highscore di method ini
         drawHighScore(gtd);
+        // Menggambar gambar Einstein di method ini
+        images(gtd);
     }
 }
