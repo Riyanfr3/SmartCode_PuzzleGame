@@ -31,7 +31,7 @@ public class Puzzle {
       playMode = args[1].toLowerCase();
     }
     // Construct UI(size, dimension, margin, mode)
-    UserInterface ui = new UserInterface(playSize, 700, 50, playMode);
+    UserInterface ui = new UserInterface(playSize, 650, 50, playMode);
     SwingUtilities.invokeLater(ui);
   }
 }
