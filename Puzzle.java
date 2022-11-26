@@ -1,12 +1,15 @@
 /*
-| NPM           | Nama Anggota                    |
-| ------------- | ------------------------------- |
-| 2108107010075 | Muhammad Firdaus                |
-| 2108107010089 | Habil Nasution                  |
-| 2108107010082 | Sharahiya                       |
-| 2108107010079 | Riyan Farhan Ramadhan           |
-| 2108107010097 | Afifah Nibras                   |
-| ------------- | ------------------------------- |
+/
+/ + ------------- + ------------------------------- + ---------------------------------------- +
+/ | NPM           | Nama Anggota                    |  Role's Of Members                       |
+/ | ------------- + ------------------------------- + ---------------------------------------- +
+/ | 2108107010075 | Muhammad Firdaus                |  Role : Leader, Code Maker               |
+/ | 2108107010089 | Habil Nasution                  |  Role : Desainer, Bug Fixer              |
+/ | 2108107010082 | Sharahiya                       |  Role : Game Guide, Explainer Code       |
+/ | 2108107010079 | Riyan Farhan Ramadhan           |  Role : FlowChart Maker, Bug Fixer       |
+/ | 2108107010097 | Afifah Nibras                   |  Role : Explainer Code, FlowChart Maker  |
+/ + ------------- + ------------------------------- + ---------------------------------------- +
+/
 */
 
 import javax.swing.SwingUtilities;
