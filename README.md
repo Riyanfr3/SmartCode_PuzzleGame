@@ -8,14 +8,14 @@ Topic : Puzzle_Game
  2108107010079 -> Riyan Farhan Ramadhan (Role : FlowChart Maker, Bug Fixer)       
  2108107010097 -> Afifah Nibras (Role : Explainer Code, FlowChart Maker)  
 
+*Jobdesk :
+1. Muhammad Firdaus      (bagian desain : agar hasil output lebih menarik)
+2. Habil Nasution        (bagian desain : agar hasil output lebih menarik)
+3. Sharahiya             (bagian penjelasan)
+4. Afifah Nibras         (bagian penjelasan)
+5. Riyan Farhan Ramadhan (bagian mengedit dan mengumpulkan tugas) 
 
-poin 1 : Muhammad Firdaus      (bagian desain : agar hasil output lebih menarik)
-         Habil Nasution        (bagian desain : agar hasil output lebih menarik)
-poin 2 : Sharahiya             (bagian penjelasan)
-         Afifah Nibras         (bagian penjelasan)
-poin 3 : Riyan Farhan Ramadhan (bagian mengedit dan mengumpulkan tugas) 
-
-Pemberitahuan :
+*Pemberitahuan :
 1. Pemain akan ditampilkan dengan tampilan frame dari puzzle yang dimana ada terdapat kotak 3x3 yang berisi 8 angka didalamnya.
 2. Pemain akan ditampilkan 8 angka acak, dan wajib untuk menyusun nya untuk memenangkan game.
 3. Apabila pemain ingin me-Restart game nya, pemain dapat menekan button yang berada diatas kotak angka.
@@ -24,7 +24,7 @@ Pemberitahuan :
 6. Apabila pemain telah berhasil menyusun angka, maka permainan telah selesai.
 7. Dan HighScore akan otomatis muncul, HighScore disini yaitu berupa seberapa banyak pemain men-Click kotak untuk menyusun angka supaya berurutan.
 
-Kesimpulan :
+*Kesimpulan :
 1. Puzzle Class = main program dimana puzzle berjalan berdasarkan UserInterface. 
 2. User Interface Class = objek yang menjadi frame puzzle.
 3. Puzzle Grid Class = objek yang mengektensi Jpanel dan menjadi kanvas untuk seluruh tile puzzle.
