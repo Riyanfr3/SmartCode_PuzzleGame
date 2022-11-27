@@ -16,3 +16,10 @@ Pemberitahuan :
 5. Apabila kotak berada di pojok kanan bawah, maka game akan otomatis ter-Restart.
 6. Apabila pemain telah berhasil menyusun angka, maka permainan telah selesai.
 7. Dan HighScore akan otomatis muncul, HighScore disini yaitu berupa seberapa banyak pemain men-Click kotak untuk menyusun angka supaya berurutan.
+
+Kesimpulan :
+1. Puzzle Class = main program dimana puzzle berjalan berdasarkan UserInterface. 
+2. User Interface Class = objek yang menjadi frame puzzle.
+3. Puzzle Grid Class = objek yang mengektensi Jpanel dan menjadi kanvas untuk seluruh tile puzzle.
+4. Control Class = objek yang mengekstensikan MouseAdapter dan menjadi responder untuk pergerakan serta semua click di UserInterface.
+5. Logic Class = Objek yang menyimpan logika memulai dan mengakhiri game puzzle.
