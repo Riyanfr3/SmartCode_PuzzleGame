@@ -10,9 +10,9 @@ Topic : Puzzle_Game
 
 
 poin 1 : Muhammad Firdaus      (bagian desain : agar hasil output lebih menarik)
-          Habil Nasution        (bagian desain : agar hasil output lebih menarik)
+         Habil Nasution        (bagian desain : agar hasil output lebih menarik)
 poin 2 : Sharahiya             (bagian penjelasan)
-          Afifah Nibras         (bagian penjelasan)
+         Afifah Nibras         (bagian penjelasan)
 poin 3 : Riyan Farhan Ramadhan (bagian mengedit dan mengumpulkan tugas) 
 
 Pemberitahuan :
