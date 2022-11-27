@@ -8,6 +8,13 @@ Topic : Puzzle_Game
  2108107010079 -> Riyan Farhan Ramadhan (Role : FlowChart Maker, Bug Fixer)       
  2108107010097 -> Afifah Nibras (Role : Explainer Code, FlowChart Maker)  
 
+
+poin 1 : Muhammad Firdaus      (bagian desain : agar hasil output lebih menarik)
+          Habil Nasution        (bagian desain : agar hasil output lebih menarik)
+poin 2 : Sharahiya             (bagian penjelasan)
+          Afifah Nibras         (bagian penjelasan)
+poin 3 : Riyan Farhan Ramadhan (bagian mengedit dan mengumpulkan tugas) 
+
 Pemberitahuan :
 1. Pemain akan ditampilkan dengan tampilan frame dari puzzle yang dimana ada terdapat kotak 3x3 yang berisi 8 angka didalamnya.
 2. Pemain akan ditampilkan 8 angka acak, dan wajib untuk menyusun nya untuk memenangkan game.
