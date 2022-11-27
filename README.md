@@ -1,6 +1,6 @@
 # SmartCode_Puzzle_Game
 
-Topic : Puzzle_Game
+*Topic : Puzzle_Game
                        
  2108107010075 -> Muhammad Firdaus (Role : Leader, Code Maker)               
  2108107010089 -> Habil Nasution (Role : Desainer, Bug Fixer)              
