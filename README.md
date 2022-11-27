@@ -2,6 +2,18 @@
 
 Topic : Puzzle_Game
 
+/*
+/ + ------------- + ------------------------------- + ---------------------------------------- +
+/ | NPM           | Nama Anggota                    |  Role's Of Members                       |
+/ | ------------- + ------------------------------- + ---------------------------------------- +
+/ | 2108107010075 | Muhammad Firdaus                |  Role : Leader, Code Maker               |
+/ | 2108107010089 | Habil Nasution                  |  Role : Desainer, Bug Fixer              |
+/ | 2108107010082 | Sharahiya                       |  Role : Game Guide, Explainer Code       |
+/ | 2108107010079 | Riyan Farhan Ramadhan           |  Role : FlowChart Maker, Bug Fixer       |
+/ | 2108107010097 | Afifah Nibras                   |  Role : Explainer Code, FlowChart Maker  |
+/ + ------------- + ------------------------------- + ---------------------------------------- +
+*/
+
 Pemberitahuan :
 1. Pemain akan ditampilkan dengan tampilan frame dari puzzle yang dimana ada terdapat kotak 3x3 yang berisi 8 angka didalamnya.
 2. Pemain akan ditampilkan 8 angka acak, dan wajib untuk menyusun nya untuk memenangkan game.
